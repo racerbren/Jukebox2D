@@ -3,13 +3,14 @@
 
 #include <box2d/box2d.h>
 #include <iostream>
+#include <SDL_image.h>
+
+//Create world with gravity
+b2Vec2 gravity(0.0f, -10.0f);
+b2World world(gravity);
 
 int main()
 {
-	//Create world with gravity
-	b2Vec2 gravity(0.0f, -10.0f);
-	b2World world(gravity);
-
 	//Create body definition for the ground and set its inital position
 	b2BodyDef groundBodyDef;
 	groundBodyDef.position.Set(0.0f, -10.0f);
