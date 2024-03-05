@@ -1,2 +1,2 @@
 # JukeBox2D
-Physics based 2D music visualizer
+2D music isualizer using SDL2
